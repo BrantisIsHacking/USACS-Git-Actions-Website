@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Not-Addition Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card" aria-labelledby="title">
+        <header class="header">
+          <p class="eyebrow">Simple Calculator</p>
+          <h1 id="title">Addition... but minus</h1>
+          <p class="subtitle">Type two numbers and the calculator will subtract the second from the first.</p>
+        </header>
+
+        <div class="calc" id="calc">
+          <label class="field">
+            <span>First number</span>
+            <input id="a" name="a" type="number" step="any" inputmode="decimal" placeholder="42" required />
+          </label>
+
+          <div class="operator" aria-hidden="true">+</div>
+
+          <label class="field">
+            <span>Second number</span>
+            <input id="b" name="b" type="number" step="any" inputmode="decimal" placeholder="17" required />
+          </label>
+
+        </div>
+
+        <div class="result" aria-live="polite">
+          <span>Result</span>
+          <output id="result">--</output>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
